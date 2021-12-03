@@ -2,8 +2,11 @@
 
 def main():
    """Main entry"""
-   pass
+
 
 if __name__ == '__main__':
-   main()
+   with open('example.txt') as f:
+      #lines = f.readlines() #vo lista gi vadi to ne ni treba
+      lines=f.read()
+      print(lines)
    
